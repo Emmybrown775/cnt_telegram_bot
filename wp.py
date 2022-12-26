@@ -8,8 +8,8 @@ import os
 class WP:
 
     def __init__(self):
-        self.user = os.environ.get("USER")
-        self.password = os.environ.get("PASSWORD")
+        self.user = "admin"
+        self.password = "WWZy HIrO msVm 8K0f XMrG QrX6"
         self.today_date = dt.datetime.now()
         self.const = f"Open Heaven For Teens {self.today_date.date().day} {self.today_date.strftime('%B')} 2022"
         self.sourceURL = "https://flatimes.com/wp-json/wp/v2/posts?per_page=20"

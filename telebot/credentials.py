@@ -1,3 +1,3 @@
 import os
-bot_token = os.environ.get("BOT_TOKEN")
+bot_token = "5558023539:AAFS282Gk9yEuxHZ6hj6S2VA307eSkMOyGI"
 URL = "https://cnt-telegram-bot.vercel.app/"
