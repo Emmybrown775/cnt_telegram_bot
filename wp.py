@@ -11,7 +11,8 @@ class WP:
         self.user = "admin"
         self.password = "WWZy HIrO msVm 8K0f XMrG QrX6"
         self.today_date = dt.datetime.now()
-        self.const = f"Open Heaven For Teens {self.today_date.date().day} {self.today_date.strftime('%B')} 2022"
+        self.const = f"Open Heaven For Teens {self.today_date.date().day} {self.today_date.strftime('%B')} " \
+                     f"{self.today_date.strftime('%Y')}"
         self.sourceURL = "https://flatimes.com/wp-json/wp/v2/posts?per_page=20"
         self.wpBaseUrl = "https://christnestteens.com/"
         self.postStatus = "publish"
