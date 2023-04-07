@@ -55,8 +55,8 @@ def respond():
             bot.sendMessage(chat_id=chat_id, text=wrong, reply_to_message_id=msg_id)
 
     elif update.effective_message.photo is not None:
-        photo_file = await update.effective_message.photo[-1].get_file()
-        await photo_file.download("user_photo.jpg")
+        photo_file = update.effective_message.photo[-1].get_file()
+        photo_file.download("user_photo.jpg")
         update.message.reply_photo(photo_file)
     return 'ok'
 
