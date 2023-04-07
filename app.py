@@ -68,7 +68,7 @@ def handle_image(update, context):
 
 
 # Create an updater and add the image message handler
-updater = Updater(token='YOUR_BOT_TOKEN_HERE', use_context=True)
+updater = Updater(token=TOKEN, use_context=True)
 dispatcher = updater.dispatcher
 dispatcher.add_handler(MessageHandler(Filters.photo, handle_image))
 
