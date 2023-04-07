@@ -13,6 +13,7 @@ app = Flask(__name__)
 
 
 
+
 @app.route('/{}'.format(TOKEN), methods=['POST'])
 async def respond():
     # retrieve the message in JSON and then transform it to Telegram object
